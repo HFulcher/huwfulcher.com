@@ -43,7 +43,7 @@ params:
     enabled: true
     title: Huw Fulcher
     subtitle: "Software/ML Engineer, writing here about technology & faith."
-    imageUrl: "images/huw.png"
+    imageUrl: "huw.png"
     imageWidth: 240
     imageHeight: 240
     imageTitle: Huw's photo
