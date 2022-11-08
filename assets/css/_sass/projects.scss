@@ -1,0 +1,13 @@
+/* Project Page */
+.ProjectContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.ProjectContainer a p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+//Based on: https://codepen.io/GeorgePark/pen/vdqYom
