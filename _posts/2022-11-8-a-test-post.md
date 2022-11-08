@@ -4,4 +4,4 @@ title: A test post
 published: true
 ---
 
-This is a test to see if \[TinaCMS]\(tina.io) can commit or not
+This is a test to see if [TinaCMS](https://tina.io) can commit or not
