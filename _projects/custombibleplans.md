@@ -1,6 +1,6 @@
 ---
 layout: post
 title: Custom Bible Plans
-description: with no page entry here
+description: A reading plan builder & scheduler for church leaders
 redirect: https://custombibleplans.com
 ---

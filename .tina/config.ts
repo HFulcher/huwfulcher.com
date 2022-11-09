@@ -65,6 +65,44 @@ export default defineStaticConfig({
           },
         ],
       },
+      {
+        name: "projects",
+        label: "Projects",
+        path: "_projects",
+        fields: [
+          {
+            type: "string",
+            name: "layout",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "redirect",
+            label: "Redirect",
+            required: false,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+            required: false,
+          },
+        ],
+      },
     ],
   },
 });
