@@ -43,6 +43,13 @@ export default defineStaticConfig({
           {
             type: "string",
             name: "layout",
+            label: "Layout",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Description",
             required: true,
           },
           {
@@ -55,6 +62,7 @@ export default defineStaticConfig({
           {
             type: "boolean",
             name: "published",
+            label: "Published",
             required: true,
           },
           {
