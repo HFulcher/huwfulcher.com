@@ -7,6 +7,8 @@ baseurl: "" #name of GitHub repository
 url: "https://huwfulcher.com" #custom url to be used instead of GitHub repository
 email: fulcherhuw@gmail.com
 
+open_external_links_in_new_tab: false
+
 # Pagination
 paginate: 4
 permalink: /blog/:year/:title/
@@ -17,7 +19,6 @@ twitter: "huwfulcher"
 linkedin: "huwfulcher"
 stackoverflow: "3752895/hfulcher"
 github: "HFulcher"
-
 
 # Markdown
 highlighter: rouge
@@ -36,23 +37,20 @@ compress_html:
 
 #collection
 collections:
+  notes:
+    output: true
+    permalink: /garden/:slug
   projects:
     output: true
     permalink: /projects/:name/
-    order:
-      - shortProject.md
-      - longerProjectTitle.md
-      - redirect.md
-      - project4.md
-      - project5.md
-      - project6.md
 
 sass:
   sass_dir: /assets/css/_sass
-  style: compressed
+  style: :compressed
 
 include:
   - _pages
+  - _notes
 
 exclude:
   - README.md
@@ -63,3 +61,10 @@ plugins:
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-target-blank
+  - jekyll-last-modified-at
+
+defaults:
+  - scope:
+      path: "_notes/**/*.md"
+    values:
+      layout: "note"
