@@ -1,5 +1,4 @@
 ---
-layout: compress
 ---
 <!DOCTYPE html>
 <html>
@@ -7,27 +6,29 @@ layout: compress
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+        <title>Digital Garden | {{page.slug}}</title>
 
-        {% seo %}
-
-        {% include favicon.html %}
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?">
 
         {% include mathjax.html %}
 
         <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
         <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-        <script defer data-domain="huwfulcher.com" src="https://analytics.huwfulcher.com/js/plausible.js"></script>
+        <!-- <script defer data-domain="huwfulcher.com" src="https://analytics.huwfulcher.com/js/plausible.js"></script> -->
     </head>
 
-    <h1 class="post-headline">{{site.title}}</h1>
-    <h3 class="post-description">{{site.description}}</h3>
-    {% include navigation.html %}
-    <body>
+    <h1 class="post-headline">The Garden</h1>
+    <div class="links wrap">
+        <a href="{{site.baseurl}}/">< Back</a>
+    </div>
+    <body style="max-width: 1200px;">
         <main>
             {{ content }}
         </main>
 
-        <footer>
+        <footer style="padding-bottom: 1rem;">
           <p class="copy">
             <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
                     | Powered by Jekyll and
@@ -35,10 +36,6 @@ layout: compress
                     Last updated on {{ site.time | date_to_long_string }}
             </small>
           </p>
-
-        {% include social-footer.html %}
-
         </footer>
     </body>
-
 </html>
