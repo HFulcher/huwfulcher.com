@@ -2,6 +2,7 @@
 
 EMPTY_FRONT_MATTER = <<~JEKYLL
   ---
+  description: A note in Huw's knowledge base
   ---
 
 JEKYLL

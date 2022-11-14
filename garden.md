@@ -1,5 +1,6 @@
 ---
 layout: default
+description: The entrance to Huw Fulcher's knowledgebase
 permalink: /garden
 published: true
 ---

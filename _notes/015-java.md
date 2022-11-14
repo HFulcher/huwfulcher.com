@@ -1,5 +1,10 @@
-Back: [[010-technology]]
+---
+description: A note in Huw's knowledge base
+---
+
+Back: [[010-technology|010 - Technology]]
 
 # 015 - Java
 
-- [[intellij]]
+## Java IDEs
+- [[intellij|IntelliJ]]

@@ -1,3 +1,7 @@
-Back: [[015-java]]
+---
+description: A note in Huw's knowledge base
+---
 
-[[resolving-stuck-jdk]]
+Back: [[015-java|015 - Java]]
+
+[[resolving-stuck-jdk|Resolving Stuck JDK]]

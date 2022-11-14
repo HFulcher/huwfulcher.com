@@ -1,27 +1,24 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-        <title>Digital Garden | {{page.slug}}</title>
-
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?">
+        {% include seo.html %}
 
         {% include mathjax.html %}
 
         <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
-        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+        <!-- <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script> -->
         <!-- <script defer data-domain="huwfulcher.com" src="https://analytics.huwfulcher.com/js/plausible.js"></script> -->
     </head>
 
     <h1 class="post-headline">The Garden</h1>
     <div class="links wrap">
-        <a href="{{site.baseurl}}/">< Back</a>
+        <a href="{{site.baseurl}}/">Homepage</a>
+        <a href="/garden/000-home">000 - Home</a>
     </div>
     <body style="max-width: 1200px;">
         <main>
@@ -32,7 +29,10 @@
           <p class="copy">
             <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
                     | Powered by Jekyll and
-                    <a target="_blank" href="https://github.com/jitinnair1/gradfolio/">Gradfolio</a>.
+                    <a target="_blank" href="https://github.com/jitinnair1/gradfolio/">Gradfolio</a>. 
+                    <br>
+                    Digital Garden made by <a target="_blank" href="https://github.com/maximevaillancourt/digital-garden-jekyll-template/">Maxime Vaillancourt</a>.
+                    <br>
                     Last updated on {{ site.time | date_to_long_string }}
             </small>
           </p>

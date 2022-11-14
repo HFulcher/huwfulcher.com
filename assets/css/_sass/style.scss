@@ -131,17 +131,6 @@ blockquote {
   margin: 1em;
 }
 
-/* Horizontal scrolling navbar. From: https://iamsteve.me/blog/horizontal-scrolling-responsive-menu */
-.scroll {
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar; }
-
-.scroll::-webkit-scrollbar {
-  display: none; }
-
-
 /* Button */
 .simplebutton {
   display: inline-block;

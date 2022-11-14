@@ -1,3 +1,7 @@
+---
+description: A note in Huw's knowledge base
+---
+
 Back: [[aws-ec2]]
 
 # EC2 Instance Types

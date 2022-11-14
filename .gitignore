@@ -4,5 +4,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.tina/.env
 
 node_modules

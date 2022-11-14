@@ -4,7 +4,7 @@
   </div>
 </div>
 
-<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+<iframe title="tooltip-popup" style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
 </iframe>
 
 <script>
@@ -47,7 +47,7 @@
         iframe.onload = function() {
           tooltipContentHtml = ''
           tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
-          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('#notes-content').innerHTML
 
           tooltipContent.innerHTML = tooltipContentHtml
           linkHistories[event.target.href] = tooltipContentHtml

@@ -1,3 +1,7 @@
+---
+description: A note in Huw's knowledge base
+---
+
 Back: [[tinacms]]
 
 # Integrate TinaCMS with Jekyll
