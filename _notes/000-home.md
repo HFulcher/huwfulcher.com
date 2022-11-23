@@ -1,7 +1,3 @@
----
-description: A note in Huw's knowledge base
----
-
 # The Entrance
 Welcome to the garden! From here you can go down different paths to explore and discover. At the moment there aren't many paths but that will change over time. As you go down one avenue you may find yourself coming back out another. These interconnecting avenues are the great thing about Digital Gardens, they allow information to cross pollinate and not be confined to specific categories.
 
@@ -12,7 +8,13 @@ Rules of the garden:
 
 ## Topics
 - [[010-technology|010 - Technology]]
+- [[020-space|020 - Space]]
+- 
 
+## Book Notes
+Here is where I capture notes I've made about books. Eventually those notes will be broken out into their topical counterparts but they will remain linked here.
+
+[[book-notes|Book Notes]]
 
 ## Reading List
 The [[reading-list|Reading List]] captures topics that I want to look into but haven't had a chance to yet

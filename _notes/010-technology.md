@@ -1,7 +1,3 @@
----
-description: A note in Huw's knowledge base
----
-
 Back: [[000-home|000 - Home]]
 
 # 010 - Technology
@@ -11,3 +7,8 @@ Back: [[000-home|000 - Home]]
 - [[013-cms|013 - CMS]]
 - [[014-static-sites|014 - Static Sites]]
 - [[015-java|015 - Java]]
+- [[016-ml|016 - Machine Learning]]
+- [[017-python|017 - Python]]
+- [[018-data|018 - Data]]
+
+

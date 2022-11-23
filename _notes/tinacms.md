@@ -1,7 +1,3 @@
----
-description: A note in Huw's knowledge base
----
-
 Back: [[013-cms|013 - CMS]]
 
 # TinaCMS

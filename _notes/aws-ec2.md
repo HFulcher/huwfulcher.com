@@ -1,7 +1,3 @@
----
-description: A note in Huw's knowledge base
----
-
 Back: [[011-aws|011 - AWS]]
 
 # AWS EC2

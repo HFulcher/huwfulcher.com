@@ -1,7 +1,3 @@
----
-description: A note in Huw's knowledge base
----
-
 Back: [[aws-ec2]]
 
 # EC2 User Data Script
