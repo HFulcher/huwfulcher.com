@@ -3,10 +3,17 @@
 {%- if site.email -%}
 <a title="{{ _locale_string_email }}"
 class="social-button email" itemprop="email"
-href="mailto:{{ site.email | encode_email }}" target="_blank">
+href="/email">
 <i class="far fa-envelope"></i>
 </a>
 {%- endif -%}
+
+<a title="Keybase"
+class="social-button keybase" itemprop="sameAs"
+href="https://keybase.io/huwfulcher"
+target="_blank">
+<i class="fab fa-keybase"></i>
+</a>
 
 {%- if site.linkedin -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'LinkedIn' }}"

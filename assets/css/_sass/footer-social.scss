@@ -33,8 +33,15 @@
 .fa-envelope
 .fa-quora
 .fa-instagram
+.fa-keybase
 .fa-stack-overflow {
   font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.keybase {
+  background: #32a0ff;
+  color: white;
+  border-color: black;
 }
 
 .rounded-social-buttons .social-button.facebook {
