@@ -4,6 +4,7 @@ excerpt: >-
   A popular way to form habits is to count the streak you've achieved. But
   sometimes that hinders more than helps.
 title: Making a chain isn't as important as making an effort
+published: true
 ---
 
 It's common knowledge for those with new year's resolutions that keeping track of your new habits with streaks (or chains) is touted as a way to achieve them. For the past few years I've sought to take the same approach and crack out the habit tracker and make it a goal to keep the streaks running as long as possible. Unfortunately they always fizzle out far too quickly.
