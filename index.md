@@ -19,6 +19,4 @@ Hi, I'm Huw. Currently a Senior Software Engineer at [CACI IIG](https://www.caci
 
 Outside of my work I am a big Star Trek fan and a practicing Christian. You can find my thoughts on everything from work to personal interests on my [blog]({{site.baseurl}}/blog). If you're interested in my work (outside of employment) you can find it [here]({{site.baseurl}}/projects).
 
-As a bit of an experiment I am maintaining a copy of my Obsidian Knowledge Base as a [Digital Garden](https://maggieappleton.com/garden-history) on this website. You can check it out [here]({{site.baseurl}}/garden/)
-
 If you want to discuss any of the above then please get in touch through the social buttons at the bottom of this page. I'm also interested in collaborating with others on research in any of the "Current Interests" areas above. I look forward to hearing from you!
