@@ -86,6 +86,17 @@ blockquote {
   }
 }
 
+.post-description {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.blog-headline {
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
 /* Pagination style in index/home page */
 .pagination {
   margin: 2em 0;
@@ -156,3 +167,14 @@ blockquote {
 .wrap {
   display: inline-block;
 }
+
+.article-list p {
+  margin-top: 5px;
+}
+
+.article-list h2 {
+  font-size: 1.75rem;
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+

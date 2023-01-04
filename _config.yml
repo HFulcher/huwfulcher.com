@@ -13,7 +13,6 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-twitter: "huwfulcher"
 linkedin: "huwfulcher"
 stackoverflow: "3752895/hfulcher"
 github: "HFulcher"

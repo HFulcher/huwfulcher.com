@@ -3,9 +3,14 @@ layout: default
 ---
 
 <article>
-    <h1 class="post-headline">{{page.title}}</h1>
+    <h1 class="blog-headline">{{page.title}}</h1>
     <p class="meta"><small>{{page.date | date: '%B %d, %Y'}}</small></p>
 
     {{content}}
+
+    <div class="text-center py-10">
+        <p>Have some thoughts? <a class="button" href="/email">Reply via email</a></p>
+        
+    </div>
 
 </article>

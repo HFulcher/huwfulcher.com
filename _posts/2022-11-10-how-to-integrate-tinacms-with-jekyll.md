@@ -2,7 +2,7 @@
 layout: post
 title: How to integrate TinaCMS with Jekyll
 description: A test
-excerpt: Step-by-step on how to add TinaCMS to Jekyll
+excerpt: Step-by-step on how to add TinaCMS to Jekyll.
 published: true
 ---
 
