@@ -20,6 +20,11 @@
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
-  background-color: white;
-  color: black;;
+  background-color: $body-bg;
+  color: $text-color;
+
+  @media (prefers-color-scheme: dark) {
+    color: $text-color-dark;
+    background-color: $body-bg-dark;
+  }
 }

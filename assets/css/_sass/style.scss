@@ -39,6 +39,10 @@ a {
     }
 
   }
+
+  @media (prefers-color-scheme: dark) {
+    color: #60a1c1;
+  }
 }
 
 figure {

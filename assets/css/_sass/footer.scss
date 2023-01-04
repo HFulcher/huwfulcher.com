@@ -11,6 +11,9 @@ footer {
 
 /* Footer copyrights */
 .copy {
-    color: black;
+    color: $text-color;
     text-align: center;
+    @media (prefers-color-scheme: dark) {
+      color: $text-color-dark;
+    }
 }
