@@ -2,15 +2,10 @@
 layout: default
 ---
 
-<article>
-    <h1 class="blog-headline">{{page.title}}</h1>
-    <p class="meta"><small>{{page.date | date: '%B %d, %Y'}}</small></p>
+<h2>{{page.title}}</h2>
+<p><small>{{page.date | date: '%B %d, %Y'}}</small></p>
 
-    {{content}}
+{{content}}
 
-    <div class="text-center py-10">
-        <p>Have some thoughts? <a class="button" href="/email">Reply via email</a></p>
-        
-    </div>
+<p>Have some thoughts? <a class="button" href="/email">Reply via email</a></p>
 
-</article>

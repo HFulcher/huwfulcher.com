@@ -1,15 +1,14 @@
 ---
-title: How to get in touch via email
+title: How to get in touch
 layout: default
-description: How to reach Huw via email
+description: How to reach me
 permalink: /email
 published: true
 ---
 
-## Standard Way
+## Email
 You can find me at huwfulcher [at] protonmail [dot] com
 
-## Encrypted
 If you make use of GPG you can verify my signature using the public key below.
 
 ```
@@ -29,5 +28,13 @@ djIA/2S5Vv1NY5Vb8B3KZGshuov90z5WrgEBxhjxnXtTi9UlAQC1rN8d/GHM
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-## Keybase
-You can also find me at [keybase](https://keybase.io/huwfulcher).
+## Socials 
+You can also find me at 
+
+- [LinkedIn](https://linkedin.com/in/)
+- [GitHub](https://github.com/hfulcher)
+- [Stack Overflow](https://stackoverflow.com/users/)
+- [Keybase](https://keybase.io/huwfulcher)
+
+I have Twitter/Mastodon but very rarely use either. If you really don't want to
+reach out via email I would suggest LinkedIn as your next best option.

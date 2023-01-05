@@ -12,11 +12,6 @@ paginate: 4
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
-# Social media links in footer
-linkedin: "huwfulcher"
-stackoverflow: "3752895/hfulcher"
-github: "HFulcher"
-
 # Markdown
 highlighter: rouge
 markdown: kramdown

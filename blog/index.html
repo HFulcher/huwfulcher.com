@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<div class="article-list">
-  {% for post in paginator.posts %}
-    {% if post.published %}
-    <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{post.excerpt | strip_html}}</p>
-    {% endif %}
-  {% endfor %}
-</div>
+<ul>
+    {% for post in paginator.posts %}
+        {% if post.published %}
+        <li>
+          {{post.date | date: '%B %d, %Y'}} - <strong><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></strong>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+</section>
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}
