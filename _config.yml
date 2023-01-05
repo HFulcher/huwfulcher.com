@@ -3,6 +3,8 @@
 title: Huw Fulcher
 description: Software Engineer, MLOps specialist
 
+author: Huw Fulcher
+
 baseurl: "" #name of GitHub repository
 url: "https://huwfulcher.com" #custom url to be used instead of GitHub repository
 email: fulcherhuw@gmail.com
@@ -27,12 +29,6 @@ compress_html:
   profile: false
   startings: []
 
-#collection
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-
 sass:
   sass_dir: /assets/css/_sass
   style: :compressed
@@ -50,4 +46,5 @@ plugins:
   - jekyll-email-protect
   - jekyll-target-blank
   - jekyll-last-modified-at
+  - jekyll-feed
 

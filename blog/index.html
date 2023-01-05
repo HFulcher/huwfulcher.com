@@ -4,11 +4,9 @@ layout: default
 
 <ul>
     {% for post in paginator.posts %}
-        {% if post.published %}
         <li>
           {{post.date | date: '%B %d, %Y'}} - <strong><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></strong>
         </li>
-        {% endif %}
     {% endfor %}
 </ul>
 </section>

@@ -1,3 +1,3 @@
 [build]
 publish = "_site"
-command = "tinacms build && jekyll build"
+command = "jekyll build"
