@@ -7,7 +7,7 @@ author: Huw Fulcher
 
 baseurl: "" #name of GitHub repository
 url: "https://huwfulcher.com" #custom url to be used instead of GitHub repository
-email: fulcherhuw@gmail.com
+email: huwfulcher@protonmail.com
 
 # Pagination
 paginate: 4
