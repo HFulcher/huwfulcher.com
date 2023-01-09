@@ -44,7 +44,7 @@
   --spacing: 0.5rem;
 
   // Spacings for typography elements
-  --typography-spacing-vertical: 1.5rem;
+  --typography-spacing-vertical: 1.25rem;
 
   // Spacings for body > header, body > main, body > footer, section, article
   --block-spacing-vertical: calc(var(--spacing) * 2);
@@ -191,22 +191,22 @@ h1 {
 
 h2 {
   --font-size: 1.75rem;
-  --typography-spacing-vertical: 2.625rem;
+  --typography-spacing-vertical: 1.75rem;
 }
 
 h3 {
   --font-size: 1.5rem;
-  --typography-spacing-vertical: 2.25rem;
+  --typography-spacing-vertical: 1.5rem;
 }
 
 h4 {
   --font-size: 1.25rem;
-  --typography-spacing-vertical: 1.874rem;
+  --typography-spacing-vertical: 1.25rem;
 }
 
 h5 {
   --font-size: 1.125rem;
-  --typography-spacing-vertical: 1.6875rem;
+  --typography-spacing-vertical: 1rem;
 }
 
 // Forms elements

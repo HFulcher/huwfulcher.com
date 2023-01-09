@@ -140,7 +140,7 @@ h6 {
 // Margin-top for headings after a typography block
 :where(address, blockquote, dl, figure, form, ol, p, pre, table, ul) {
   ~ :is(h1, h2, h3, h4, h5, h6) {
-    margin-top: var(--typography-spacing-vertical);
+    margin-top: calc(var(--typography-spacing-vertical) * 1.5);
   }
 }
 
