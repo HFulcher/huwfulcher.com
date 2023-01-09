@@ -57,5 +57,5 @@ which is more local) I can admire the activism of the brand.
 
 In a world with rampant consumerism, choosing what we buy and services we pay for 
 is more important. For me, brands that go deeper than "making a profit" are 
-more worthy of my wallet, even if they'er more expensive.
+more worthy of my wallet, even if they're more expensive.
 
