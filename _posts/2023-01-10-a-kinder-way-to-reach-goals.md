@@ -26,7 +26,7 @@ I've come up with 3 rules:
 3. Reflection not metrics
 
 
-### 1. Explore not do 
+### Explore not do 
 I've been starting to read [Building a Second Brain](https://www.buildingasecondbrain.com/)
 recently and tentatively deciding on whether to use it or if it will send me
 down the productivity rabbit hole again.
