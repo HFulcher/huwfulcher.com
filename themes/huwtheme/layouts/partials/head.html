@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+{{- partial "seo.html" . -}}
+
+{{ with resources.Get "css/pico.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?">
+
+{{ if hugo.IsProduction }}
+    <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="4e87aa7b-9953-43c2-96d3-fb47e08397ee" async></script>
+{{ end }}
