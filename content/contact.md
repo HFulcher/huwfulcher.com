@@ -35,6 +35,3 @@ You can also find me at
 - [Stack Overflow](https://stackoverflow.com/users/)
 - [Keybase](https://keybase.io/huwfulcher)
 - [Nostr](https://nostr.com/): `npub1urepgaccmg5zp2ay7lgnynaj8zshvnrs2zjsedvsye2mg5plhwgqc0rnvp`
-
-I use Twitter and Nostr the most. If you really don't want to
-r
