@@ -1,9 +1,6 @@
 {{ define "main" }}
 
-<p>My blog is pretty simple, no tags (might change depending on the breadth of content
-in future) and just chronological. When I write for this blog I don't spend long
-refining the posts so forgive me for typos/meandering sentences. If there's 
-something about my writing you think can be improved please get in touch.</p>
+{{ .Content }}
 
 <ul>
     {{ range .Pages.ByPublishDate.Reverse }}
