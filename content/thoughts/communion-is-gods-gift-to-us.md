@@ -7,5 +7,4 @@ category: "Christianity"
 *"Instead, Luther and the other Reformers wanted people to know
 that the sacrament is a place where we come to meet with Christ 
 Himself, in whom alone grace is to be found. **The supper is not
-our sacrifice offered to God, but God's gift offered to us.**"*
-- The Lord's Supper, Jonathan Black
+our sacrifice offered to God, but God's gift offered to us.**"* - The Lord's Supper, Jonathan Black
