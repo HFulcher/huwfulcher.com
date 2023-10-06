@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport"><link rel="canonical" href="https://huwfulcher.com/blog/2022-11-10-how-to-integrate-tinacms-with-jekyll/"/>
+
+
+
+<title>Huw Fulcher - How to integrate TinaCMS with Jekyll</title>
+
+
+
+
+
+<meta name="description" content="Step-by-step on how to add TinaCMS to Jekyll.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://huwfulcher.com/blog/2022-11-10-how-to-integrate-tinacms-with-jekyll/">
+<meta property="og:title" content="Huw Fulcher - How to integrate TinaCMS with Jekyll">
+<meta property="og:description" content="Step-by-step on how to add TinaCMS to Jekyll.">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://huwfulcher.com/blog/2022-11-10-how-to-integrate-tinacms-with-jekyll/">
+<meta property="twitter:title" content="Huw Fulcher - How to integrate TinaCMS with Jekyll">
+<meta property="twitter:description" content="Step-by-step on how to add TinaCMS to Jekyll.">
+
+<meta property="og:site_name" content="Huw Fulcher">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="stylesheet" href="/css/pico.min.d625887a2ce007dd61b16644ccd605856a4e7bce0411ce4192b4ad745317775b.css" integrity="sha256-1iWIeizgB91hsWZEzNYFhWpOe84EEc5BkrStdFMXd1s=" crossorigin="anonymous">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?">
+
+
+    <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="4e87aa7b-9953-43c2-96d3-fb47e08397ee" async></script>
+
+<body class="container"><header>
+    <nav>
+        <ul>
+            <li>
+                <a class="secondary" href="/">
+                    <h1 style="margin: 0;">Huw Fulcher</h1>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/thoughts">Thoughts</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+
+<h2>How to integrate TinaCMS with Jekyll</h2>
+<p><small><time datetime="2022-11-10">Nov 10, 2022</time></small></p>
+
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://tina.io" title="">TinaCMS</a>, the successor to <a href="forestry.io" title="">Forestry</a> has just gone to v1.0, bringing a stable, open-source, git based CMS to static sites. I&rsquo;ve just started using TinaCMS with <a href="https://huwfulcher.com" title="">my site</a> and I&rsquo;m actually writing this post using it!</p>
+<p>While there is <a href="https://tina.io/guides/tinacms/non-react-based-ssg/guide/" title="">some documentation</a> on adding TinaCMS to a non-NextJS site there are few extra steps that are needed to get it working nicely with Jekyll.</p>
+<h2 id="1-install-tinacms">1. Install TinaCMS</h2>
+<ol>
+<li><code>npx @tinacms/cli@latest init</code> <em>Note: Docs as of (10/11/2022) specify a &ndash;static flag, this is removed and won&rsquo;t work</em></li>
+<li>Choose whatever package manager is preferable</li>
+<li>Choose <code>Other</code> when asked for a framework</li>
+<li>(Optional) Use Typescript, it is recommended</li>
+<li>When asked where public assets are stored specify the top level with <code>/</code>. Jekyll considers all folders that are not prefixed with <code>_</code> to be public. Storing tina in the <code>assets</code> folder will cause issues with pathing later on.</li>
+</ol>
+<h2 id="2-configure-tinacms">2. Configure TinaCMS</h2>
+<h3 id="a-update-packagejson">a) Update package.json</h3>
+<p>Replace the content <code>scripts</code> with the following (or add based on what you need):</p>
+<pre tabindex="0"><code>&#34;dev&#34;: &#34;tinacms dev -c \&#34;bundle exec jekyll serve\&#34;&#34;,
+&#34;build&#34;: &#34;tinacms build &amp;&amp; jekyll build&#34;,
+</code></pre><p>Run <code>npm run dev</code> to check no errors are present. You should be able to navigate to <code>localhost:4000/admin/</code> and see the TinaCMS interface.</p>
+<p>The <code>admin</code> folder should be at the top level of the directory.</p>
+<h3 id="b-edit-schema">b) Edit schema</h3>
+<p>At this point TinaCMS is looking at <code>content/posts</code> for the <code>.md</code> files to display and edit. For Jekyll this path should be <code>_posts/</code>. To fix this we can edit the <code>config.ts</code> file in <code>.tina</code>.</p>
+<h4 id="i-update-media-folder">i. Update media folder</h4>
+<p>TinaCMS supports uploading and embedding media in your markdown documents from the web editor. The <code>media</code> property in <code>config.ts</code> controls where this folder is placed. For Jekyll, this should be under <code>assets</code>. Change <code>media</code> to:</p>
+<pre tabindex="0"><code>media: {
+  tina: {
+	mediaRoot: &#34;uploads&#34;,
+	publicFolder: &#34;assets&#34;,
+  },
+},
+</code></pre><p>You can change the <code>mediaRoot</code> name to whatever you like, this specifies the folder name under <code>assets</code>.</p>
+<h4 id="ii-update-schema-path">ii. Update schema path</h4>
+<p>Under <code>schema</code> the different types of content are defined as a list of <code>collections</code>. The only collection present when first creating TinaCMS is <code>post</code>. Each collection will have a <code>path</code> variable that defines where TinaCMS should look for the associated files. Update this to <code>_posts</code>.</p>
+<p>Once done your <code>collections</code> should look like this:</p>
+<pre tabindex="0"><code>collections: [
+  {
+    name: &#34;post&#34;,
+    label: &#34;Posts&#34;,
+    path: &#34;_posts&#34;,
+    fields: [
+	  {
+	    type: &#34;string&#34;,
+	    name: &#34;title&#34;,
+	    label: &#34;Title&#34;,
+	    isTitle: true,
+	    required: true,
+	  },
+	  {
+	    type: &#34;rich-text&#34;,
+	    name: &#34;body&#34;,
+	    label: &#34;Body&#34;,
+	    isBody: true,
+	  },
+    ],
+  },
+],
+</code></pre><h4 id="iii-tidy-up-existing-posts">iii. Tidy up existing posts</h4>
+<p>Depending on if you&rsquo;re doing a fresh Jekyll install or already have an existing blog, TinaCMS prefers filenames to be <code>.md</code> rather than <code>.markdown</code>. Update those accordingly.</p>
+<p>Now when you access <code>localhost:4000/admin/</code> and got <code>Posts</code> you should see your existing markdown files.</p>
+<h4 id="iv-updating-the-schema">iv. Updating the schema</h4>
+<p>At this point you can happily use TinaCMS to update or create new markdown files but it will be restricted to only being able to interact with the title and body. If you have any additional frontmatter it will ignore it. To resolve this you can update the <code>fields</code> section of your <code>config.ts</code>. Using the starter jekyll site I&rsquo;ve created one below:</p>
+<pre tabindex="0"><code>fields: [
+  {
+    type: &#34;string&#34;,
+    name: &#34;layout&#34;,
+    label: &#34;Layout&#34;,
+    required: true,
+  },
+  { 
+    type: &#34;string&#34;,
+    name: &#34;title&#34;,
+    label: &#34;Title&#34;,
+    isTitle: true,
+    required: true,
+  },
+  { 
+    type: &#34;datetime&#34;,
+    name: &#34;date&#34;,
+    label: &#34;Date&#34;,
+    required: true,
+  },
+  { 
+    type: &#34;string&#34;,
+    name: &#34;categories&#34;,
+    label: &#34;Categories&#34;,
+  },
+  {
+    type: &#34;rich-text&#34;,
+    name: &#34;body&#34;,
+    label: &#34;Body&#34;,
+    isBody: true,
+  },
+],
+</code></pre><p>Go ahead and try creating a new markdown file using the editor. You should see it appear in <code>_posts</code> but there&rsquo;s a snag&hellip; Jekyll requires a specific naming convention to know which markdown files it should show:</p>
+<p><code>YEAR-MONTH-DAY-title.md</code></p>
+<p>Thankfully, TinaCMS allows us to customise our own filename conventions. Add the following to your <code>post</code> collection just after <code>path</code>:</p>
+<pre tabindex="0"><code>ui: {
+  filename: {
+    readonly: false,
+    slugify: values =&gt; {
+      const date = new Date();
+      const day = date.getDate();
+      const month = date.getMonth() + 1;
+      const year = date.getFullYear();
+
+      let currentDate = `${year}-${month}-${day}`;
+
+      return `${currentDate}-${values?.title?.toLowerCase().replace(/ /g, &#39;-&#39;)}`
+    }
+  }
+},
+</code></pre><p>This will take the title you specify, slugify it and prefix it with the current date. When you save files they will be in the correct format for Jekyll to find!</p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>This just scratches the surface of the customisation you can do with TinaCMS. It has the ability to add custom components, fields, templates and a whole lot more. If something in this guide doesn&rsquo;t work get in touch with any of the social links below and I&rsquo;ll see if I can help.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://tina.io/guides/tinacms/non-react-based-ssg/guide">Non-React-based SSG support - TinaCMS Docs</a></li>
+<li><a href="https://tina.io/docs/extending-tina/filename-customization">Filename customization - TinaCMS Docs</a></li>
+<li><a href="https://tina.io/docs/reference/types">Field Types - TinaCMS Docs</a></li>
+</ul>
+
+
+
+        </main><footer>
+  <nav>
+    <p>
+      <small> &copy; Huw Fulcher 2023
+      </small>
+    </p>
+  </nav>
+</footer>
+</body>
+</html>

@@ -1,6 +1,7 @@
 ---
 date: "2023-01-05T00:00:00Z"
 excerpt: A simple trick to stop information hoarding.
+published: true
 title: Capturing information by actionability not category
 ---
 
