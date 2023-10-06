@@ -17,6 +17,7 @@ collections:
       - {label": "Title", name: "title", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Published", name: "published", widget: "boolean", default: "false"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "thought"
     label: "Thought"
     folder: "content/thoughts"
@@ -26,3 +27,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", default: "", date_format: "true", time_format: "false"}
       - {label: "Category", name: "category", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
