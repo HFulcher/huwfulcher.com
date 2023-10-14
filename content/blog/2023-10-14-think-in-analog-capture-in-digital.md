@@ -3,7 +3,7 @@ date: 2023-10-14T21:35:03.516Z
 title: Think in analog, capture in digital
 excerpt: The debate between analog and digital detracts from the core issue. How
   do we preserve our work for generations to come?
-published: "false"
+published: true
 ---
 ## Notes give us history
 When we look at the greats of history, we find that they wrote, a lot. And we typically know them as the greats because we have their writings. And usually they were writing only for themselves. Marcus Aurelius, Leonardo DaVinci, Isaac Newton. Undoubtedly these three made significant contributions to humanity and history but their notes have also been pivotal. Pivotal, in a scientific, artistic and philosophical way.
