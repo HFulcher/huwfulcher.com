@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{ .Page.Content }}
+
+{{ $url := .Site.Url}}
+
+<ul style="list-style: none!;">
+    {{ range .Pages }}
+        <li>
+            <time>{{ .Metadata.date }}</time> - <strong><a href="{{ print $url "/" .Slug }}">{{ .Title }}</a></strong>
+        </li>
+    {{ end }}
+</ul>
+
+{{ end }}

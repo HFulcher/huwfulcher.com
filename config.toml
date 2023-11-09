@@ -1,7 +1,0 @@
-baseURL = "https://huwfulcher.com"
-languageCode = "en-gb"
-title = "Huw Fulcher"
-pluralizeListTitles = 'false'
-
-theme = "huwtheme"
-disableKinds = ["taxonomy", "term"]
