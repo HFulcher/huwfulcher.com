@@ -30,8 +30,9 @@ djIA/2S5Vv1NY5Vb8B3KZGshuov90z5WrgEBxhjxnXtTi9UlAQC1rN8d/GHM
 You can also find me at 
 
 - [Twitter](https://twitter.com/huwdev)
+- [Mastodon](https://universeodon.com/@huwfulcher): `@huwfulcher@universeodon.com`
+- [Nostr](https://nostr.com/): `npub1urepgaccmg5zp2ay7lgnynaj8zshvnrs2zjsedvsye2mg5plhwgqc0rnvp`
 - [LinkedIn](https://linkedin.com/in/)
 - [GitHub](https://github.com/hfulcher)
 - [Stack Overflow](https://stackoverflow.com/users/)
 - [Keybase](https://keybase.io/huwfulcher)
-- [Nostr](https://nostr.com/): `npub1urepgaccmg5zp2ay7lgnynaj8zshvnrs2zjsedvsye2mg5plhwgqc0rnvp`
